@@ -48,16 +48,16 @@
    依次添加以下所有name以及value。<br>
     ┉┉ ∞ ∞ ┉┉┉┉ ∞ ∞ ┉┉┉ <br>
      Name:<code>USER</code><br>
-     Value：<code>填写你的习讯云账号密码和学校ID,用空格或者空行分开</code><br>
+     Value：<code>填写你的习讯云账号密码和学校ID,用空格或者空行分开 例：【123456789 abc123】</code><br>
    ┉┉ ∞ ∞ ┉┉┉┉ ∞ ∞ ┉┉┉<br>
      Name：<code>SIGN_GPS</code><br>
-     Value：<code>填写签到的GPS坐标</code><br>
+     Value：<code>填写签到的GPS坐标 例：【116.000000,40.000000】</code><br>
     ┉┉ ∞ ∞ ┉┉┉┉ ∞ ∞ ┉┉┉<br>
      Name：<code>ADDRESS_NAME</code><br>
-     Value：<code>签到地址名字</code><br>
+     Value：<code>签到地址名字 例：【腾讯大厦】</code><br>
     ┉┉ ∞ ∞ ┉┉┉┉ ∞ ∞ ┉┉┉<br>
      Name：<code>SCKEY</code><br>
-     Value：<code>填写你的server酱SCKEY码，以SCU开头</code>#申请地址http://sc.ftqq.com/3.version  <br>
+     Value：<code>填写你的server酱SCKEY码，以SCT开头</code>#申请地址[https://sct.ftqq.com/sendkey](https://sct.ftqq.com/sendkey)  <br>
       ┉┉ ∞ ∞ ┉┉┉┉ ∞ ∞ ┉┉┉<br>配置完后如下图所示
 
    ![image](https://raw.githubusercontent.com/kuilei0926/xixunyun/main/img/QQ%E6%88%AA%E5%9B%BE20201222093054.png)<br>
@@ -69,12 +69,17 @@
     </details>
 - 设置好环境变量后点击你的仓库上方的 Actions 选项，会打开一个如下的页面，点击 `I understand...` 按钮确认在 Fork 的仓库上启用 GitHub Actions 。
 - 最后在你这个 Fork 的仓库内随便改点什么（比如给 README 文件删掉或者增加几个字符）提交一下手动触发一次 GitHub Actions 就可以了 **（重要！！！测试发现在 Fork 的仓库上 GitHub Actions 的定时任务不会自动执行，必须要手动触发一次后才能正常工作）** 。
-   <details>
+	   ![image](https://raw.githubusercontent.com/kuilei0926/xixunyun/main/img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20220909181245.png)
+
    <summary> 如何随意修改README文件？</summary>
-   
+
+   <details>
    1.进入你的仓库并进入code界面,点击笔字的按钮进入编写
+	   
     ![image](https://raw.githubusercontent.com/kuilei0926/xixunyun/main/img/QQ%E6%88%AA%E5%9B%BE20201222095234.png)
+	   
    2.在代码框随意编写或删减以达到改变代码的效果，随后点击提交commit，当然如果可以让说明书更精美欢迎来pull
+	   
     ![image](https://raw.githubusercontent.com/kuilei0926/xixunyun/main/img/QQ%E6%88%AA%E5%9B%BE20201222095347.png)
 
    </details>
@@ -85,7 +90,6 @@
 	
     ![image](https://github.com/kuilei0926/xixunyun/blob/main/img/QQ%E6%88%AA%E5%9B%BE20201222095901.png?raw=true)
    </details>
-
 
 
 
@@ -114,5 +118,4 @@
 
 请一定要根据配置说明配置计划时间；防止被判定滥用。
 <br>
-由于本项目被大量fork并启动actions功能，占用github官方服务器大量资源。部分用户反映无法签到，actions功能被禁止等问题。但是大部分用户仍然正常可以使用；解决方法：1.使用使用Travis Ci运行。学业繁忙，不予教程。2.请访问我的服务器http://www.baidu.com/ 但并不保证其稳定性。3.用自己的服务器运行其中的py脚本。
-
+由于本项目被大量fork并启动actions功能，占用github官方服务器大量资源。部分用户反映无法签到，actions功能被禁止等问题。但是大部分用户仍然正常可以使用；解决方法：用自己的服务器运行其中的py脚本。
